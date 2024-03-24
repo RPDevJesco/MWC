@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Modular Web Components (MWC) is a lightweight framework for building web applications using a component-based architecture. The goal of MWC is to provide a simple and intuitive way to create reusable, encapsulated, and modular components that can be easily composed to build complex user interfaces.
+Modular Web Components (MWC) is a lightweight framework for building web applications using a component-based architecture. The goal of MWC is to provide a simple and intuitive way to create reusable, encapsulated, and modular components that can be easily composed to build complex user interfaces in Vanilla Javascript without the need for a build system or external dependencies.
 
 ## Motivation
 
