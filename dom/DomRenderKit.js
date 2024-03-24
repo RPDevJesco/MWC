@@ -54,7 +54,7 @@ loadScripts([
     './primitives/Heading.js',
     './primitives/Style.js',
     './dom/App.js',
-    '../MyApp.js',
+    '/MyApp.js',
     './dom/Main.js'
 ], () => {
 
