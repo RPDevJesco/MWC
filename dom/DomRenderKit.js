@@ -54,7 +54,7 @@ loadScripts([
     './primitives/Heading.js',
     './primitives/Style.js',
     './dom/App.js',
-    './MyApp.js',
+    'https://rpdevjesco.github.io/MWC/MyApp.js',
     './dom/Main.js'
 ], () => {
 
