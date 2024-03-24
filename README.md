@@ -47,6 +47,25 @@ const root = document.getElementById('root');
 root.innerHTML = TemplatingEngine.parse(app.render());
 ```
 
+To call the entire framework to use it in your html, you import the 'DomRenderKit' js file.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual DOM Example</title>
+</head>
+<body>
+<div id="app"></div>
+
+<!-- Include JavaScript files -->
+<script type="module" src="./dom/DomRenderKit.js"></script>
+</body>
+</html>
+```
+
 Future Work
 
     State Management: Integrate a state management solution to handle complex application states.
