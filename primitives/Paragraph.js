@@ -5,6 +5,7 @@ class Paragraph extends Component {
 
     render() {
         const { text } = this.props;
-        return `<p>${text}</p>`;
+        //return `<p>${text}</p>`;
+        return this.renderTemplate('p', { class: 'app-description' }, this.props.text);
     }
 }

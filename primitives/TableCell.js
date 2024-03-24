@@ -4,6 +4,6 @@ class TableCell extends Component {
     }
     render() {
         const { children } = this.props;
-        return `<td>${children}</td>`;
+        return this.renderTemplate('table', {}, this.props.children);
     }
 }

@@ -5,6 +5,6 @@ class Style extends Component {
 
     render() {
         const { css } = this.props;
-        return `<style>${css}</style>`;
+        return this.renderTemplate('style', {}, this.props.css);
     }
 }

@@ -4,8 +4,7 @@ class Select extends Component {
     }
     render() {
         const { options, onChange } = this.props;
-        const optionElements = options.map(option => `<option value="${option.value}">${option.text}</option>`).join('');
-        // Assuming `onChange` is a string that represents the function name
-        return `<select onchange="${onChange}">${optionElements}</select>`;
+        const optionElements = options.map(option => this.renderTemplate('option', { value: option.value }, option.text)).join('');
+        return this.renderTemplate('select', { onchange: onChange }, optionElements);
     }
 }

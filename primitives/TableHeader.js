@@ -4,6 +4,6 @@ class TableHeader extends Component {
     }
     render() {
         const { children } = this.props;
-        return `<thead>${children}</thead>`;
+        return this.renderTemplate('thead', {}, this.props.children);
     }
 }

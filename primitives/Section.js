@@ -4,6 +4,6 @@ class Section extends Component {
     }
     render() {
         const { children } = this.props;
-        return `<section>${children}</section>`;
+        return this.renderTemplate('section', {}, this.props.children);
     }
 }

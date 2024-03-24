@@ -4,6 +4,6 @@ class Option extends Component {
     }
     render() {
         const { value, text } = this.props;
-        return `<option value="${value}">${text}</option>`;
+        return this.renderTemplate('option', { value }, text);
     }
 }

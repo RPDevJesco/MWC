@@ -4,6 +4,6 @@ class TableRow extends Component {
     }
     render() {
         const { children } = this.props;
-        return `<tr>${children}</tr>`;
+        return this.renderTemplate('tr', {}, this.props.children);
     }
 }

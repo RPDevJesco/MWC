@@ -4,7 +4,7 @@ class NavBar extends Component {
     }
     render() {
         const { links } = this.props;
-        const linkElements = links.map(link => `<a href="${link.href}">${link.text}</a>`).join('');
-        return `<nav>${linkElements}</nav>`;
+        const linkElements = links.map(link => this.renderTemplate('a', { href: link.href }, link.text)).join('');
+        return this.renderTemplate('nav', {}, linkElements);
     }
 }
